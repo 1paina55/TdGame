@@ -118,7 +118,7 @@ public:
 			if (json_wave_interval && json_wave_interval->type == cJSON_Number)
 				wave.interval = json_wave_interval->valuedouble;
 			cJSON* json_wave_spawn_list = cJSON_GetObjectItem(json_wave, "spawn_list");
-			if (json_wave_spawn_list && json_wave_spawn_list->type == cJSON_Number)
+			if (json_wave_spawn_list && json_wave_spawn_list->type == cJSON_Array)
 			{
 				cJSON* json_spawn_event = nullptr;
 				cJSON_ArrayForEach(json_spawn_event, json_wave_spawn_list)
@@ -130,7 +130,7 @@ public:
 					Wave::SpawnEvent& spawn_event = wave.spawn_event_list.back();
 
 					cJSON* json_spawn_event_interval = cJSON_GetObjectItem(json_spawn_event, "interval");
-					if (json_spawn_event && json_spawn_event_interval->type == cJSON_Number)
+					if (json_spawn_event_interval && json_spawn_event_interval->type == cJSON_Number)
 						spawn_event.interval = json_spawn_event_interval->valuedouble;
 
 					cJSON* json_spawn_event_spawn_point = cJSON_GetObjectItem(json_spawn_event, "point");
@@ -148,9 +148,9 @@ public:
 						else if (str_enemt_type == "Skeleton")
 							spawn_event.enemy_type = EnemyType::Skeleton;
 						else if (str_enemt_type == "Godblin")
-							spawn_event.enemy_type = EnemyType::Godblin;
+							spawn_event.enemy_type = EnemyType::Goblin;
 						else if (str_enemt_type == "GodblinPriest")
-							spawn_event.enemy_type = EnemyType::GodblinPriest;
+							spawn_event.enemy_type = EnemyType::GoblinPriest;
 						
 					}
 				}
@@ -230,9 +230,9 @@ private:
 
 		if (json_window_titile && json_window_titile->type == cJSON_String)
 			tpl.window_title = json_window_titile->valuestring;
-		if (json_window_width && json_window_width->type == cJSON_String)
+		if (json_window_width && json_window_width->type == cJSON_Number)
 			tpl.window_width = json_window_width->valueint;
-		if (json_window_height && json_window_height->type == cJSON_String)
+		if (json_window_height && json_window_height->type == cJSON_Number)
 			tpl.window_height = json_window_height->valueint;
 	}
 	void parse_player_template(PlayerTemplate& tpl, cJSON* json_root)
@@ -241,8 +241,8 @@ private:
 			cJSON* json_speed = cJSON_GetObjectItem(json_root, "speed");
 			cJSON* json_normal_attack_interval = cJSON_GetObjectItem(json_root, "normal_attack_interval");
 			cJSON* json_normal_attack_damage = cJSON_GetObjectItem(json_root, "normal_attack_damage");
-			cJSON* json_skill_interval = cJSON_GetObjectItem(json_root, "json_skill_interval");
-			cJSON* json_skill_damage = cJSON_GetObjectItem(json_root, "json_skill_damage");
+			cJSON* json_skill_interval = cJSON_GetObjectItem(json_root, "skill_interval");
+			cJSON* json_skill_damage = cJSON_GetObjectItem(json_root, "skill_damage");
 
 		if (json_speed && json_speed->type == cJSON_Number)
 			tpl.speed = json_speed->valuedouble;
@@ -278,7 +278,7 @@ private:
 		if (!json_root || json_root->type != cJSON_Object) return;
 
 		cJSON* json_interval = cJSON_GetObjectItem(json_root, "interval");
-		cJSON* json_damage = cJSON_GetObjectItem(json_root, " damage");
+		cJSON* json_damage = cJSON_GetObjectItem(json_root, "damage");
 		cJSON* json_view_range = cJSON_GetObjectItem(json_root, "view_range");
 		cJSON* json_cost = cJSON_GetObjectItem(json_root, "cost");
 		cJSON* json_upgrade_cost = cJSON_GetObjectItem(json_root, "upgrade_cost");
@@ -287,7 +287,7 @@ private:
 		parse_number_array(tpl.damage, 10, json_damage);
 		parse_number_array(tpl.view_range, 10, json_view_range);
 		parse_number_array(tpl.cost, 10, json_cost);
-		parse_number_array(tpl.upgrade_cost, 10, json_upgrade_cost);
+		parse_number_array(tpl.upgrade_cost, 9, json_upgrade_cost);
 
 	}
 

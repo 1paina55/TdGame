@@ -6,8 +6,8 @@ enum  class EnemyType
 	Slim,
 	KingSlim,
 	Skeleton,
-	Goblin,
-	GoblinPriest
+	Godblin,
+	GodblinPriest
 };
 
 #endif // !_ENEMT_TYPE_H_

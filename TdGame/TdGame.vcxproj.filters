@@ -56,9 +56,6 @@
     <ClInclude Include="enemy_type.h">
       <Filter>头文件\enemy</Filter>
     </ClInclude>
-    <ClInclude Include="resources_manager.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="timer.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -85,6 +82,15 @@
     </ClInclude>
     <ClInclude Include="goblin_priest.h">
       <Filter>头文件\enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="resources_manager.h">
+      <Filter>头文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="enemy_manager.h">
+      <Filter>头文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="home_manager.h">
+      <Filter>头文件\manager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -51,7 +51,7 @@ public:
 		const auto& itor = spawner_route_pool.find(idx_spawn_point);
 		if (itor == spawner_route_pool.end())
 			return;
-		
+
 		Enemy* enemy = nullptr;
 
 		switch (type)
@@ -109,7 +109,7 @@ public:
 
 protected:
 	EnemyManager() = default;
-	
+
 	~EnemyManager()
 	{
 		for (Enemy* enemy : enemy_list)

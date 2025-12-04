@@ -190,7 +190,7 @@ public:
 		return recover_intensity;
 	}
 
-	bool can_move() const
+	bool can_remove() const
 	{
 		return !is_vaild;
 	}

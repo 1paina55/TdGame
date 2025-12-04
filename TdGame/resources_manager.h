@@ -201,7 +201,7 @@ public:
 	{
 		return font_pool;
 	}
-	const SoundPool& get_sound_pooll()
+	const SoundPool& get_sound_pool()
 	{
 		return sound_pool;
 	}

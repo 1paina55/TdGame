@@ -76,8 +76,8 @@ public:
 	EnemyTemplate slim_template;
 	EnemyTemplate king_slim_template;
 	EnemyTemplate skeleton_template;
-	EnemyTemplate godblin_template;
-	EnemyTemplate godblin_priest_template;
+	EnemyTemplate goblin_template;
+	EnemyTemplate goblin_priest_template;
 
 	const double num_initial_hp = 10;
 	const double num_initial_coin = 100;
@@ -208,8 +208,8 @@ public:
 		parse_enemy_template(slim_template, cJSON_GetObjectItem(json_enemy, "slim"));
 		parse_enemy_template(king_slim_template, cJSON_GetObjectItem(json_enemy, "king_slim"));
 		parse_enemy_template(skeleton_template, cJSON_GetObjectItem(json_enemy, "skeleton"));
-		parse_enemy_template(godblin_template, cJSON_GetObjectItem(json_enemy, "godblin"));
-		parse_enemy_template(godblin_priest_template, cJSON_GetObjectItem(json_enemy, "godblin_priest"));
+		parse_enemy_template(goblin_template, cJSON_GetObjectItem(json_enemy, "goblin"));
+		parse_enemy_template(goblin_priest_template, cJSON_GetObjectItem(json_enemy, "goblin_priest"));
 
 		cJSON_Delete(json_root);
 		return true;

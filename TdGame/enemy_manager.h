@@ -7,7 +7,7 @@
 #include "config_manager.h"
 
 #include"slim_enemy.h"
-#include "king_slim_enemy..h"
+#include "king_slim_enemy.h"
 #include "skeleton_enemy.h"
 #include "goblin_enemy.h"
 #include "goblin_priest.h"
@@ -141,7 +141,7 @@ private:
 				&& position.x <= position_home_tile.x + SIZE_TILE
 				&& position.y <= position_home_tile.y + SIZE_TILE)
 			{
-				enemy->make_invaild();
+				enemy->make_invalid();
 
 				HomeManager::instance()->decrease_hp(enemy->get_damage());
 			}

@@ -71,7 +71,7 @@
     <ClInclude Include="slim_enemy.h">
       <Filter>头文件\enemy</Filter>
     </ClInclude>
-    <ClInclude Include="king_slim_enemy..h">
+    <ClInclude Include="king_slim_enemy.h">
       <Filter>头文件\enemy</Filter>
     </ClInclude>
     <ClInclude Include="skeleton_enemy.h">
@@ -90,6 +90,12 @@
       <Filter>头文件\manager</Filter>
     </ClInclude>
     <ClInclude Include="home_manager.h">
+      <Filter>头文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="wave_manager.h">
+      <Filter>头文件\manager</Filter>
+    </ClInclude>
+    <ClInclude Include="coin_manager.h">
       <Filter>头文件\manager</Filter>
     </ClInclude>
   </ItemGroup>

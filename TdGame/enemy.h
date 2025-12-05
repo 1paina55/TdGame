@@ -119,7 +119,7 @@ public:
 		if (hp <= 0)
 		{
 			hp = 0;
-			is_vaild = false;
+			is_valid = false;
 		}
 
 		is_show_sketch = true;
@@ -145,9 +145,9 @@ public:
 		refresh_position_target();
 	}
 
-	void make_invaild()
+	void make_invalid()
 	{
-		is_vaild = true;
+		is_valid = false;
 	}
 
 	double get_hp() const
@@ -192,7 +192,7 @@ public:
 
 	bool can_remove() const
 	{
-		return !is_vaild;
+		return !is_valid;
 	}
 
 	double get_route_process() const
@@ -232,7 +232,7 @@ private:
 	Vector2 velocity;
 	Vector2 direction;
 
-	bool is_vaild = true;
+	bool is_valid = true;
 
 	Timer timer_sketch;
 	bool is_show_sketch = false;

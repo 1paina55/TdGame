@@ -147,9 +147,9 @@ public:
 							spawn_event.enemy_type = EnemyType::KingSlim;
 						else if (str_enemt_type == "Skeleton")
 							spawn_event.enemy_type = EnemyType::Skeleton;
-						else if (str_enemt_type == "Godblin")
+						else if (str_enemt_type == "Goblin")
 							spawn_event.enemy_type = EnemyType::Goblin;
-						else if (str_enemt_type == "GodblinPriest")
+						else if (str_enemt_type == "GoblinPriest")
 							spawn_event.enemy_type = EnemyType::GoblinPriest;
 						
 					}

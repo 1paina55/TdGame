@@ -9,7 +9,7 @@ class HomeManager : public Manager<HomeManager>
 	friend class Manager<HomeManager>;
 
 public:
-	double get_current_hp_num()
+	double get__current_hp_num()
 	{
 		return num_hp;
 	}

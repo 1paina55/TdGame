@@ -11,6 +11,7 @@ public:
 	{
 		num_coin += val;
 	}
+
 	void decrease_coin(double val)
 	{
 		num_coin -= val;
@@ -19,19 +20,19 @@ public:
 			num_coin = 0;
 	}
 
+
 protected:
 	CoinManager()
 	{
 
 	}
 
-	~CoinManager()
-	{
+	~CoinManager() = default;
 
-	}
 
 private:
 	double num_coin = 0;
 };
 
 #endif // !_COIN_MANAGER_H_
+

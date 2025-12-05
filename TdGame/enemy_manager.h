@@ -48,6 +48,21 @@ public:
 		static const Map::SpawnerPoutePool& spawner_route_pool
 			= ConfigManager::instance()->map.get_idx_spawner_pool();
 
+		std::cout << "Available spawn points: ";
+		for (const auto& pair : spawner_route_pool) {
+			std::cout << pair.first << " ";
+		}
+		std::cout << std::endl;
+
+		std::cout << "Trying to spawn enemy at point: " << idx_spawn_point << std::endl;
+
+		const auto& itor = spawner_route_pool.find(idx_spawn_point);
+		if (itor == spawner_route_pool.end())
+		{
+			std::cout << "ERROR: Spawn point " << idx_spawn_point << " not found!" << std::endl;
+			return;
+		}
+
 		const auto& itor = spawner_route_pool.find(idx_spawn_point);
 		if (itor == spawner_route_pool.end())
 			return;

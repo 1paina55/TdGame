@@ -71,7 +71,7 @@ public:
 		is_collisional = false;
 	}
 
-	bool can_remove()
+	bool can_remove() const
 	{
 		return !is_valid;
 	}

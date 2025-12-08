@@ -36,6 +36,9 @@
     <ClCompile Include="..\thirdparty\cJSON\cJSON.c">
       <Filter>源文件\cJSON</Filter>
     </ClCompile>
+    <ClCompile Include="axe_bullet.h">
+      <Filter>头文件\bullet</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game_manager.h">
@@ -102,6 +105,12 @@
       <Filter>头文件\manager</Filter>
     </ClInclude>
     <ClInclude Include="bullet.h">
+      <Filter>头文件\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="arrow_bullet.h">
+      <Filter>头文件\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="shell_bullet.h">
       <Filter>头文件\bullet</Filter>
     </ClInclude>
   </ItemGroup>

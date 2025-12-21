@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -138,7 +138,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="animation.h" />
+    <ClInclude Include="archer_tower.h" />
     <ClInclude Include="arrow_bullet.h" />
+    <ClInclude Include="axeman_tower.h" />
     <ClInclude Include="bullet.h" />
     <ClInclude Include="bullet_manager.h" />
     <ClInclude Include="bullet_type.h" />
@@ -146,9 +148,11 @@
     <ClInclude Include="enemy.h" />
     <ClInclude Include="enemy_manager.h" />
     <ClInclude Include="enemy_type.h" />
+    <ClInclude Include="facing.h" />
     <ClInclude Include="game_manager.h" />
     <ClInclude Include="goblin_enemy.h" />
     <ClInclude Include="goblin_priest.h" />
+    <ClInclude Include="gunner_tower.h" />
     <ClInclude Include="home_manager.h" />
     <ClInclude Include="king_slim_enemy.h" />
     <ClInclude Include="manager.h" />
@@ -160,6 +164,8 @@
     <ClInclude Include="slim_enemy.h" />
     <ClInclude Include="tile.h" />
     <ClInclude Include="timer.h" />
+    <ClInclude Include="tower.h" />
+    <ClInclude Include="tower_type.h" />
     <ClInclude Include="vector2.h" />
     <ClInclude Include="wave.h" />
     <ClInclude Include="wave_manager.h" />

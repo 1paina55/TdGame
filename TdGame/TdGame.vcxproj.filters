@@ -25,6 +25,12 @@
     <Filter Include="头文件\bullet">
       <UniqueIdentifier>{851be1a4-3033-4b25-8487-696902aa8517}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\tower">
+      <UniqueIdentifier>{dd237f73-7e69-492c-99c7-4364c3547496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ui">
+      <UniqueIdentifier>{e43e7f6b-55e2-4361-b319-e33e5f315a5b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -47,29 +53,8 @@
     <ClInclude Include="manager.h">
       <Filter>头文件\manager</Filter>
     </ClInclude>
-    <ClInclude Include="tile.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="map.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="route.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="wave.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="enemy_type.h">
       <Filter>头文件\enemy</Filter>
-    </ClInclude>
-    <ClInclude Include="timer.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="animation.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="vector2.h">
-      <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="enemy.h">
       <Filter>头文件\enemy</Filter>
@@ -118,6 +103,45 @@
     </ClInclude>
     <ClInclude Include="bullet_type.h">
       <Filter>头文件\bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="tower.h">
+      <Filter>头文件\tower</Filter>
+    </ClInclude>
+    <ClInclude Include="tower_type.h">
+      <Filter>头文件\tower</Filter>
+    </ClInclude>
+    <ClInclude Include="animation.h">
+      <Filter>头文件\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="facing.h">
+      <Filter>头文件\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="map.h">
+      <Filter>头文件\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="route.h">
+      <Filter>头文件\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="tile.h">
+      <Filter>头文件\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>头文件\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="vector2.h">
+      <Filter>头文件\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="wave.h">
+      <Filter>头文件\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="archer_tower.h">
+      <Filter>头文件\tower</Filter>
+    </ClInclude>
+    <ClInclude Include="axeman_tower.h">
+      <Filter>头文件\tower</Filter>
+    </ClInclude>
+    <ClInclude Include="gunner_tower.h">
+      <Filter>头文件\tower</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
